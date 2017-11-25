@@ -1,4 +1,6 @@
-------------
+linked with github
+-- ----------
+-- ----------
 SELECT COUNT(*) FROM gst_test.account_master;
 SELECT COUNT(*) FROM gst_demo.account_master;
 
