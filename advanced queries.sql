@@ -6,7 +6,11 @@ SELECT COUNT(*) FROM gst_test.account_master;
 SELECT COUNT(*) FROM gst_demo.account_master;
 
 -- 20171125
-new queries will be added 
+new queries will be added
+SELECT *FROM document_print_setting dps LEFT JOIN document_header dh ON  dps.fk_document_master_id IN(SELECT DISTINCT dh.`fk_document_master_id` FROM document_header );
+SELECT *FROM document_print_setting dps WHERE  dps.fk_document_master_id IN(SELECT DISTINCT dh.`fk_document_master_id` FROM document_header dh);
+UPDATE `item_master` SET hsn_code= 7113  WHERE `item_name` NOT LIKE '%bullion%' AND `fk_product_classification_group_id` IN (2,3);
+SELECT *FROM document_print_setting dps WHERE  dps.fk_document_master_id IN(SELECT DISTINCT dh.`fk_document_master_id` FROM document_header dh);
 
 
 
