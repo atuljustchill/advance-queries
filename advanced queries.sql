@@ -5,6 +5,9 @@ configured atom text editor and github desktop
 SELECT COUNT(*) FROM gst_test.account_master;
 SELECT COUNT(*) FROM gst_demo.account_master;
 
+-- 20171125
+new queries will be added 
+
 
 
 SELECT COUNT(*)
